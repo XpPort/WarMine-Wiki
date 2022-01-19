@@ -1,5 +1,5 @@
 ---
-label: Welcome
+label: Главная
 icon: home
 ---
 # Welcome to Retype
