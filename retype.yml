@@ -5,5 +5,10 @@ branding:
   title: WIKI RPG Novice
   label: Docs
 links:
+  - text: Главная
+    link: /README.md
+    icon: home
+
 - text: Главная страница
   link: https://warmine.ru
+  icon: comment-discussion
