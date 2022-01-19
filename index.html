@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.695900068237" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.695900341422" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.695900068237" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.695900341422" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.695900068237" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.695900341422" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -201,131 +201,6 @@
 <p>You can install Retype using <code v-pre>npm</code>, <code v-pre>yarn</code>, or the <code v-pre>dotnet</code> CLI.</p>
 <p>From your command line, navigate to a folder location where you have one or more Markdown <code v-pre>.md</code> files, such as a GitHub project.</p>
 <p>Next, choose one of the following tools to first install <code v-pre>retypeapp</code> and then start Retype by using the <code v-pre>retype watch</code> <a href="guides/cli.md#retype-watch">command</a>:</p>
-<doc-tabs>
-<doc-tab id="npm">
-<template #title>NPM</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">npm install retypeapp --global
-retype watch</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="yarn">
-<template #title>Yarn</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">yarn global add retypeapp
-retype watch</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-<doc-tab id="dotnet">
-<template #title>dotnet</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">dotnet tool install retypeapp --global
-retype watch</code></pre>
-</doc-codeblock></div>
-</doc-tab>
-</doc-tabs>
-<p>That&#x27;s it! Your new Retype website should be up and running.</p>
-<div class="flex mb-6">
-    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3">
-<p>You will require either <a href="https://www.npmjs.com/get-npm">npm</a>, <a href="https://classic.yarnpkg.com/en/docs/install/">Yarn</a>, or the <a href="https://dotnet.microsoft.com/download/dotnet-core">dotnet</a> CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It&#x27;s up to you. <span class="docs-emoji">&#x1F64C;</span></p>
-<p>All operating systems are supported, including Mac, Windows, and Linux.</p>
-        </div>
-    </div>
-</div>
-<hr />
-<doc-anchor-target id="live-reload">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#live-reload">#</doc-anchor-trigger>
-        <span>Live reload</span>
-    </h2>
-</doc-anchor-target>
-<p>If a change is detected, such as editing and saving an <code v-pre>.md</code> file, your Retype website will be updated almost instantly within the browser.</p>
-<p>The <code v-pre>retype watch</code> command runs the following three commands and listens for any new changes in your content.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">retype init
-retype build
-retype run</code></pre>
-</doc-codeblock></div>
-<p>After running <code v-pre>retype watch</code>, edit any <code v-pre>.md</code> file and see your change appear in the browser.</p>
-<!--
-!!! COMING SOON
-
-Retype can also build amazing reference documentation based upon your projects source code. C# projects are currently in beta support, TypeScript is coming soon, and there are plans for many more languages in the future.
-
-Just point Retype at a C# project and reference documentation will be generated based on your library's source code, code comments, and metadata.
-
-!!!
--->
-<hr />
-<doc-anchor-target id="features">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features">#</doc-anchor-trigger>
-        <span>Features</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="it-just-works">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#it-just-works">#</doc-anchor-trigger>
-        <span><span class="docs-emoji">&#x1F389;</span> It just works</span>
-    </h4>
-</doc-anchor-target>
-<p>Retype has been built to be easy to use and should <em>&quot;just work&quot;</em> out-of-the-box without any special configuration or troublesome setup.</p>
-<doc-anchor-target id="lightning-fast">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lightning-fast">#</doc-anchor-trigger>
-        <span><span class="docs-emoji">&#x26A1;</span> Lightning fast</span>
-    </h4>
-</doc-anchor-target>
-<p>Don&#x27;t blink. Retype was built for speed.</p>
-<doc-anchor-target id="easy-install">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#easy-install">#</doc-anchor-trigger>
-        <span><span class="docs-emoji">&#x2705;</span> Easy install</span>
-    </h4>
-</doc-anchor-target>
-<p><a href="guides/getting-started.md">Installation</a> takes only a few seconds. Then you need at least one Markdown <code v-pre>.md</code> file which Retype will start building a new website from.</p>
-<doc-anchor-target id="powerful">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#powerful">#</doc-anchor-trigger>
-        <span><span class="docs-emoji">&#x1F4AA;</span> Powerful</span>
-    </h4>
-</doc-anchor-target>
-<p>Project level <a href="configuration/project.md">configuration</a> using <code v-pre>retype.yml</code> unlocks many more Retype features and customization.</p>
-<doc-anchor-target id="simple-formatting">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#simple-formatting">#</doc-anchor-trigger>
-        <span><span class="docs-emoji">&#x270F;&#xFE0F;</span> Simple formatting</span>
-    </h4>
-</doc-anchor-target>
-<p>Pages are <a href="guides/formatting.md">formatted</a> using Markdown syntax and Retype <a href="components/readme.md">components</a>. Page level <a href="configuration/page.md">configuration</a> is available, such as customizing the navigation <code v-pre>label</code> or <code v-pre>description</code> used by search engines.</p>
-<doc-anchor-target id="host-anywhere">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#host-anywhere">#</doc-anchor-trigger>
-        <span><span class="docs-emoji">&#x1F4BB;</span> Host anywhere</span>
-    </h4>
-</doc-anchor-target>
-<p>Retype generates a basic HTML website that you can host on any web hosting service, such as <a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages</a>. No special server-side software or external dependencies are required. You can host your Retype site as a public website or as a private website inside your organization.</p>
-<hr />
-<doc-anchor-target id="support">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#support">#</doc-anchor-trigger>
-        <span>Support</span>
-    </h2>
-</doc-anchor-target>
-<p>Technical support questions are best asked in the <a href="https://github.com/retypeapp/retype/discussions">Discussions</a>. The discussions are monitored 24 hours a day and we will do our best to assist.</p>
-<p>If you find a defect or would like to submit a feature request, please create an <a href="https://github.com/retypeapp/retype/issues">Issue</a> and we will investigate right away.</p>
-<p>Do you have a general inquiry? Please feel free to contact us at <a href="mailto:hello@object.net">hello@object.net</a>.</p>
 
 
 
