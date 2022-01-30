@@ -1,4 +1,4 @@
 ---   
 tags: [component, icon]
-icon: ":classical_building:"
+icon: ":currency_exchange:"
 ---
