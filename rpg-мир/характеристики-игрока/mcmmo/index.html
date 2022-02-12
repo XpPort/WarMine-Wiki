@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697728908781" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697984618969" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697728908781" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697984618969" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697728908781" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697984618969" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -206,6 +206,8 @@
 <p>Итак, на сервере есть такой замечательный плагин как <strong>McMMO</strong>, но что он нам даёт? <br/>
 А вот что: он добавляет элементы рпг в виде навыков. Всего их 13 и каждый навык мы рассмотрим по порядку, что за навык, зачем он и как прокачать.</p>
 <hr />
+<p>Итак, на сервере есть такой замечательный плагин как <strong>McMMO</strong>, но что он нам даёт? А вот что: он добавляет элементы рпг в виде навыков. Всего их 10 и каждый навык мы рассмотрим по порядку, что за навык, зачем он и как прокачать.</p>
+<hr />
 <doc-anchor-target id="шахтёрство">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#шахтёрство">#</doc-anchor-trigger>
@@ -277,6 +279,72 @@
 </tbody>
 </table>
 </div>
+<hr />
+<p><strong>Лесорубство</strong>
+Что даёт:</p>
+<ul>
+<li>Двойной дроп блоков древесины, аналогично шахтёрству.</li>
+<li>Повышенный шанс дропа ростка, при уничтожении блока листвы топором, с 100 уровня.</li>
+</ul>
+<p>Как качать:
+Быть дровосеком, рубить деревья.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th><strong>Блок</strong></th>
+<th><strong>Получаемый опыт</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Дуб</td>
+<td>70</td>
+</tr>
+<tr>
+<td>Ель</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Берёза</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Тропическое дерево</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<p><strong>Раскопки</strong>
+Что даёт:</p>
+<ul>
+<li>Особый дроп с каждого блока земли, песка, графия, песка душ, травы, глины.</li>
+</ul>
+<p>Как качать:
+Копать песок, траву, землю и т.п.</p>
+<p>Coming soon...</p>
+<hr />
+<p><strong>Починка</strong>
+Что даёт:</p>
+<ul>
+<li>Возможность чинить броню и инструменты теми же материалами из чего сделан предмет, для этого необходим железный блок. ПКМ по нему сломаной вещью, тратятся материалы, которые должны быть в инвентаре.</li>
+<li>Возможность чинить зачарованные вещи, однако есть шанс понижения качества зачарования или его снятие. До 125 уровня составляет 90% и уменьшается на 10% каждые 125 уровней.</li>
+<li>Ремонт железных и золотых предметов, возможен с 0 уровня.</li>
+<li>Ремонт алмазных предметов доступен с 50 уровня</li>
+<li>Возможность разобрать инструменты и броню на материалы, нужен 300 уровень и золотой блок.</li>
+</ul>
+<p>Как качать:
+Чинить сломанные инструменты и броню.</p>
+<hr />
+<p><strong>Акробатика</strong>
+Что даёт:</p>
+<ul>
+<li>Шанс избежать урона от падения, растет с каждым уровнем на 0,1%</li>
+<li>Шанс уклониться от атаки, растет с уровнем на 0,025%</li>
+<li>Активный скилл повышает вдвое шанс избежать урона от падения (Shift), работает за 20 блоков до удара.</li>
+</ul>
 
 
 <div class="flex items-center mt-6 mb-6">
