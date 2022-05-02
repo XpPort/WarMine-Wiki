@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.704847874624" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.704850846359" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.704847874624" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.704850846359" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.704847874624" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.704850846359" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -227,34 +227,90 @@
 <table class="comfortable">
 <thead>
 <tr>
-<th style="text-align: center;">!</th>
 <th style="text-align: center;">Имя</th>
-<th style="text-align: center;">Координаты</th>
+<th style="text-align: center;">Местонахождение</th>
 <th style="text-align: center;">Квест</th>
 <th style="text-align: center;">Награда</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="https://i.imgur.com/YVmQe8Y.png" alt="" /></td>
 <td style="text-align: center;">Скотти</td>
-<td style="text-align: center;">X:29, Z:619, Y:49</td>
+<td style="text-align: center;">Пирс</td>
 <td style="text-align: center;">Рыбалка</td>
 <td style="text-align: center;">2 каменные монеты, 32 деревянных монет, 4 алмаза</td>
 </tr>
 <tr>
-<td style="text-align: center;"><img src="https://i.imgur.com/CIxPZTR.png" alt="" /></td>
 <td style="text-align: center;">Глорин Стальной лоб</td>
-<td style="text-align: center;">X:29, Z:619, Y:49</td>
+<td style="text-align: center;">Лавка торговцев</td>
 <td style="text-align: center;">Восстановление чести</td>
 <td style="text-align: center;">Лук отряда Рокхара (о.5, п.3), доспех успешного рейда (з.5, п.4, о.4), 40 каменных монет</td>
 </tr>
 <tr>
-<td style="text-align: center;"><img src="https://i.imgur.com/NkBR1jl.png" alt="" /></td>
 <td style="text-align: center;">Вильмонд</td>
-<td style="text-align: center;">X:29, Z:619, Y:49</td>
+<td style="text-align: center;">Лавка торговцев</td>
 <td style="text-align: center;">Забытая вещь</td>
 <td style="text-align: center;">3 зелья путешественника, 2 каменные монеты</td>
+</tr>
+<tr>
+<td style="text-align: center;">Грегор</td>
+<td style="text-align: center;">Окрестности</td>
+<td style="text-align: center;">Поговорить с Джобсом</td>
+<td style="text-align: center;">24 деревянные монеты, зеленый чай</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ренато Галлина</td>
+<td style="text-align: center;">Окрестности</td>
+<td style="text-align: center;">Талон на вино</td>
+<td style="text-align: center;">Вино, 16 деревянных монет</td>
+</tr>
+<tr>
+<td style="text-align: center;">Маршал Макбрайд</td>
+<td style="text-align: center;">Окрестности</td>
+<td style="text-align: center;">Донесение в Мидгард</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">Дрю</td>
+<td style="text-align: center;">Бар</td>
+<td style="text-align: center;">Увольнение</td>
+<td style="text-align: center;">6 камнных монет, старые ботинки Дрю (з.2, п.3)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Джобс</td>
+<td style="text-align: center;">Бар</td>
+<td style="text-align: center;">Сбор цветков гнили</td>
+<td style="text-align: center;">Сок зомби, 5 каменных монет</td>
+</tr>
+<tr>
+<td style="text-align: center;">Даниэль</td>
+<td style="text-align: center;">Бар</td>
+<td style="text-align: center;">По кладбищу гуляя</td>
+<td style="text-align: center;">3 каменные монеты</td>
+</tr>
+<tr>
+<td style="text-align: center;">Брохан Бочкопуз</td>
+<td style="text-align: center;">Бар</td>
+<td style="text-align: center;">В поисках храма</td>
+<td style="text-align: center;">3 каменные монеты, шапка Брохана (з.5, п.1)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Маршал</td>
+<td style="text-align: center;">Бар</td>
+<td style="text-align: center;">Знак Маршала</td>
+<td style="text-align: center;">Прочная броня (з.3, о.2, п.2)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Арабас</td>
+<td style="text-align: center;">Бар</td>
+<td style="text-align: center;">Крепкие арбузы</td>
+<td style="text-align: center;">5 каменных монет</td>
+</tr>
+<tr>
+<td style="text-align: center;">Разведчик Галиан</td>
+<td style="text-align: center;">Окрестности</td>
+<td style="text-align: center;">Легенда о капитане Грейсе</td>
+<td style="text-align: center;">10 каменных монет, Абордажная сабля Капитана Грейсона (о.5, г.3, п.1)</td>
 </tr>
 </tbody>
 </table>
@@ -269,7 +325,6 @@
 <table class="comfortable">
 <thead>
 <tr>
-<th style="text-align: center;">!</th>
 <th style="text-align: center;">NPC</th>
 <th style="text-align: center;">Координаты</th>
 <th style="text-align: center;">Что продает</th>
@@ -277,7 +332,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="https://i.imgur.com/64uehuw.png" alt="" /></td>
 <td style="text-align: center;">Продавцы</td>
 <td style="text-align: center;">X:29, Z:619, Y:49</td>
 <td style="text-align: center;">Алхимические ингредиенты, ремесленные материалы, броня и оружие</td>
