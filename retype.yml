@@ -6,7 +6,7 @@ branding:
   label: Docs
 links:
   - text: Главная
-    link: /Главная/Main.md
+    link: /Главная.md
     icon: home
 
   - text: Сайт
