@@ -5,11 +5,11 @@ branding:
   title: WARMINE WIKI
   label: Docs
 links:
-  - text: Главная
+  - text: Вики
     link: /README.md
     icon: home
 
-  - text: Сайт
+  - text: Главная
     link: https://warmine.ru
     icon: comment-discussion
 
