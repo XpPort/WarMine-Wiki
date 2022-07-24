@@ -12,3 +12,5 @@ links:
   - text: Сайт
     link: https://warmine.ru
     icon: comment-discussion
+footer:
+  copyright: © Copyright {{ year }} – [Retype](https://retype.com/) – All rights reserved
