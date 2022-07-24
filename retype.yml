@@ -12,3 +12,11 @@ links:
   - text: Сайт
     link: https://warmine.ru
     icon: comment-discussion
+
+  - text: Форум
+    link: https://forum.warmine.ru
+    icon: comment-discussion
+    
+  - text: Донат
+    link: https://warmine.ru//go/shop/s.1
+    icon: comment-discussion
