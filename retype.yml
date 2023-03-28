@@ -2,7 +2,7 @@ input: .
 output: .retype
 url: https://wiki.warmine.ru/
 branding:
-  title: WARMINE WIKI test
+  title: WARMINE WIKI
   label: Docs
 links:
   - text: Вики
