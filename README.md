@@ -10,6 +10,6 @@ icon: home
 **RPG Novice** - MMORPG сервер, начавший своё существование в 2013 году, существующий по сей день.........
 Игровой мир разделен на две части - мир для ваших построек и склада с ресурсами, а второй - RPG. Во втором мире вы найдете NPC с заданиями и множество локаций, боссов, профессий и подземелий....
 
-ТЕСТ ТЕКСТ
+ТЕСТ ТЕКСТ текст
 
 [![](https://i.imgur.com/2KqlCqx.png)](https://vk.com/warmine)      [![](https://i.imgur.com/TOtq0Vr.png)](https://discord.gg/U7nHwQPmmR)     [![](https://i.imgur.com/g54MYN5.png)](https://www.youtube.com/c/Consiruem)
