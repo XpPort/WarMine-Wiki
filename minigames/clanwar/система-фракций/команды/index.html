@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734540268093">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734541357844">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../../resources/css/retype.css?v=2.4.0.734540268093" rel="stylesheet" />
+    <link href="../../../../resources/css/retype.css?v=2.4.0.734541357844" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../../resources/js/config.js?v=2.4.0.734540268093" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../../resources/js/config.js?v=2.4.0.734541357844" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../../resources/js/lunr.js?v=2.4.0.734540268093" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../../resources/js/lunr.js?v=2.4.0.734541357844" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -262,29 +262,33 @@
 <li>Faction (Фракция)</li>
 <li>Ally-Truce (Альянс - Перемирие)</li>
 </ul>
-<p>Команды фракции</p>
+<p><strong>Команды и их предназначение:</strong></p>
 <p>● /f create &lt;название клана&gt; - создать клан
 ● /f invite &lt;ник&gt; - пригласить игрока в клан (Офицер, Лидер)
-● /f name - переименовать фракцию (Лидер)
+● /f name - переименовать фракцию (Лидер)</p>
+<ul>
+<li>/f h,history - просмотр банковской истории фракции (Офицер, Лидер)</li>
+<li>/f money - управление банком фракции
 ● /f kick - выгнать игрока из фракции (Офицер, Лидер)
-● /f help - полный список команд Faction
-● /f map (on/off) - включить/отключить карту, показывающую территорию кланов
-● /f claim - заприватить один чанк (16x16) (Офицер, лидер)
-● /f home - телепортация на клановый штаб
-● /f sethome - установить клановый дом (Офицер, Лидер)
+● /f help - полный список команд Factions
+● /f map (on/off) - включить/отключить карту, показывающую территорию кланов в радиусе
+● /f claim - заприватить один чанк (16x16 блоков) (Офицер, лидер)
+● /f home - телепортация на клановый дом
+● /f sethome - установить клановый дом (Офицер, Лидер)</li>
+<li>/f unsethome - удалить клановый дом (Офицер, Лидер)
 ● /f promote - повысить участника клана (Офицер, Лидер)
-● /f list - список онлайна кланов
-● /f join - присоединиться к клану
+● /f list - список онлайна всех кланов
+● /f join &lt;фракция&gt; - присоединиться к клану
 ● /f desc - установить описание клана (Офицер, Лидер)
 ● /f unclaim - расприватить один чанк (Офицер, Лидер)
 ● /f leave - покинуть фракцию
 ● /f chat, c - сменить чат
-● /f open/close - сделать фракцию открытой/закрытой для вступления
-● /f title - установить или удалить титул игрока
-● /f ally &lt;клан&gt; - заключить альянс с кланом
-● /f truce &lt;клан&gt; - заключить перемирие с кланом
-● /f enemy &lt;клан&gt; - вражда с кланом
-● /f neutral &lt;клан&gt; - нейтральные отношения с кланом
+● /f open/close - сделать фракцию открытой/закрытой для вступления (Офицер, Лидер)
+● /f title - установить или удалить титул игрока (Офицер, Лидер)
+● /f ally &lt;клан&gt; - заключить альянс с кланом (Офицер, Лидер)
+● /f truce &lt;клан&gt; - заключить перемирие с кланом (Офицер, Лидер)
+● /f enemy &lt;клан&gt; - установить враждебные отношения с кланом (Офицер, Лидер)
+● /f neutral &lt;клан&gt; - нейтральные отношения с кланом (Офицер, Лидер)
 ● /f disband - распустить фракцию (Лидер)
 ● /f claim auto - автоматический приват территории (Офицер, Лидер)
 ● /f faction, f - посмотреть подробную информацию о выбранной фракции
@@ -292,10 +296,21 @@
 ● /f demote - понизить игрока в должности (Офицер, Лидер)
 ● /f leader &lt;ник&gt; - передать лидера клана другому игроку (Лидер)
 ● /f officer &lt;ник&gt; - назначить игрока офицером клана (Лидер)
-● /f p, player - информация о силе игрока
-● /f allenemy - вражда со всеми кланами на сервере. (Лидер)
-● /f mute &lt;ник&gt; - дает мут на все чаты Factions одному из членов вашей фракции (Лидер)
-● /f unmute &lt;ник&gt; - убирает мут со всех чатов Factions одному из членов вашей фракции (Лидер)</p>
+● /f p, player &lt;игрок&gt; - информация о силе игрока</li>
+</ul>
+<p>Выше перечисленные команды являются основными для Клановых войн. Теперь, рекомендуем Вам ознакомиться с новыми командами, добавленые нашей командой, о которых вы могли не знать.</p>
+<ul>
+<li>/f tnt (on/off) - включить/отключить установку динамита на территории вашей фракции для членов фракции (Офицер, Лидер)</li>
+<li>/f coords, cc - отправить запрос о помощи в чат фракции</li>
+<li>/f dchat - включить/отключить просмотр чатов фракции</li>
+<li>/f setwarp &lt;название&gt; - установить временную клановую точку для телепортации (Офицер, Лидер)</li>
+<li>/f unsetwarp - удалить клановую точку (Офицер, Лидер)</li>
+<li>/f warp - телепортироваться на клановую точку
+● /f mute &lt;ник&gt; - выдать мут на все чаты Factions члену вашей фракции (Офицер, Лидер)
+● /f unmute &lt;ник&gt; - убирает мут со всех чатов Factions члену вашей фракции (Офицер, Лидер)</li>
+<li>/f tt, territorytitles (on/off) - включить/выключить отображение названия фракции в чате при входе на ее территорию</li>
+<li>/f ask &lt;текст&gt; - отправить запрос лидерам кланов о поиске фракции</li>
+</ul>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
