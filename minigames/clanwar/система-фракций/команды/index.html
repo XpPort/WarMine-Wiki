@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734551659826">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734552603201">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../../resources/css/retype.css?v=2.4.0.734551659826" rel="stylesheet" />
+    <link href="../../../../resources/css/retype.css?v=2.4.0.734552603201" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../../resources/js/config.js?v=2.4.0.734551659826" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../../resources/js/config.js?v=2.4.0.734552603201" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../../resources/js/lunr.js?v=2.4.0.734551659826" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../../resources/js/lunr.js?v=2.4.0.734552603201" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -266,71 +266,247 @@
 <table class="comfortable">
 <thead>
 <tr>
-<th style="text-align: left;">Команда</th>
+<th style="text-align: center;">Команда</th>
 <th style="text-align: center;">Роль</th>
-<th style="text-align: right;">Описание</th>
+<th style="text-align: center;">Описание</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">/f create &lt;название клана&gt;</td>
+<td style="text-align: center;">/f create &lt;название клана&gt;</td>
 <td style="text-align: center;">Все игроки</td>
-<td style="text-align: right;">создать фракцию</td>
+<td style="text-align: center;">Создать фракцию</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f invite &lt;ник&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Пригласить игрока в клан</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f name</td>
+<td style="text-align: center;">Лидер</td>
+<td style="text-align: center;">Переименовать фракцию</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f history, h</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Банковская история фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f money</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Управление банком фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f kick</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Выгнать игрока из фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f help</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Полный список команд Factions</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f map (on/off)</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Включить или отключить карту, показывающую территорию фракций в радиусе</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f claim</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Заприватить один чанк (16x16 блоков)</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f home</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Телепортация на клановый дом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f sethome</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Установить клановый дом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f unsethome</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Удалить клановый дом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f promote</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Повысить участника клана</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f list</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Список онлайна всех кланов</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f join &lt;фракция&gt;</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Присоединиться к клану</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f desc</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Установить описание клана</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f unclaim</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Расприватить один чанк</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f leave</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Покинуть фракцию</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f chat, c</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Сменить режим чата</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f open/close</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Сделать фракцию открытой или закрытой для вступления</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f title</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Установить или удалить титул игрока в клане</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f ally &lt;клан&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Заключить альянс с кланом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f truce &lt;клан&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Заключить перемирие с кланом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f enemy &lt;клан&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Установить враждебные отношения с кланом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f neutral &lt;клан&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Нейтральные отношения с кланом</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f disband</td>
+<td style="text-align: center;">Лидер</td>
+<td style="text-align: center;">Распустить фракцию</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f claim auto</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Автоматический приват территорий</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f faction, f</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Посмотреть подробную информацию о выбранной фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f unclaimall</td>
+<td style="text-align: center;">Лидер</td>
+<td style="text-align: center;">Расприватить все земли клана</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f demote</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Понизить игрока в должности</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f leader &lt;ник&gt;</td>
+<td style="text-align: center;">Лидер</td>
+<td style="text-align: center;">Передать лидера клана другому игроку</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f officer &lt;ник&gt;</td>
+<td style="text-align: center;">Лидер</td>
+<td style="text-align: center;">Назначить игрока офицером фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f player, p &lt;игрок&gt;</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Информация о силе игрока</td>
 </tr>
 </tbody>
 </table>
 </div>
-<ul>
-<li>/f create &lt;название клана&gt; - создать фракцию</li>
-<li>/f invite &lt;ник&gt; - пригласить игрока в клан (Офицер, Лидер)</li>
-<li>/f name - переименовать фракцию (Лидер)</li>
-<li>/f history, h - просмотр банковской истории фракции (Офицер, Лидер)</li>
-<li>/f money - управление банком фракции</li>
-<li>/f kick - выгнать игрока из фракции (Офицер, Лидер)</li>
-<li>/f help - полный список команд Factions</li>
-<li>/f map (on/off) - включить или отключить карту, показывающую территорию кланов в радиусе</li>
-<li>/f claim - заприватить один чанк (16x16 блоков) (Офицер, лидер)</li>
-<li>/f home - телепортация на клановый дом</li>
-<li>/f sethome - установить клановый дом (Офицер, Лидер)</li>
-<li>/f unsethome - удалить клановый дом (Офицер, Лидер)</li>
-<li>/f promote - повысить участника клана (Офицер, Лидер)</li>
-<li>/f list - список онлайна всех кланов</li>
-<li>/f join &lt;фракция&gt; - присоединиться к клану</li>
-<li>/f desc - установить описание клана (Офицер, Лидер)</li>
-<li>/f unclaim - расприватить один чанк (Офицер, Лидер)</li>
-<li>/f leave - покинуть фракцию</li>
-<li>/f chat, c - сменить чат</li>
-<li>/f open/close - сделать фракцию открытой или закрытой для вступления (Офицер, Лидер)</li>
-<li>/f title - установить или удалить титул игрока (Офицер, Лидер)</li>
-<li>/f ally &lt;клан&gt; - заключить альянс с кланом (Офицер, Лидер)</li>
-<li>/f truce &lt;клан&gt; - заключить перемирие с кланом (Офицер, Лидер)</li>
-<li>/f enemy &lt;клан&gt; - установить враждебные отношения с кланом (Офицер, Лидер)</li>
-<li>/f neutral &lt;клан&gt; - нейтральные отношения с кланом (Офицер, Лидер)</li>
-<li>/f disband - распустить фракцию (Лидер)</li>
-<li>/f claim auto - автоматический приват территории (Офицер, Лидер)</li>
-<li>/f faction, f - посмотреть подробную информацию о выбранной фракции</li>
-<li>/f unclaimall - расприватить все земли клана (Лидер)</li>
-<li>/f demote - понизить игрока в должности (Офицер, Лидер)</li>
-<li>/f leader &lt;ник&gt; - передать лидера клана другому игроку (Лидер)</li>
-<li>/f officer &lt;ник&gt; - назначить игрока офицером клана (Лидер)</li>
-<li>/f player, p &lt;игрок&gt; - информация о силе игрока</li>
-</ul>
 <p>Выше перечисленные команды являются основными для Клановых войн. Теперь, рекомендуем Вам ознакомиться с новыми командами, добавленые нашей командой, о которых вы могли не знать.</p>
 <p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-3 text-sm rounded-md">
     <span>Список новых команд</span>
 </span></p>
-<ul>
-<li>/f tnt (on/off) - включить или отключить установку динамита на территории вашей фракции для членов фракции (Офицер, Лидер)</li>
-<li>/f coords, cc - отправить запрос о помощи в чат фракции</li>
-<li>/f dchat - включить или отключить просмотр чатов фракции</li>
-<li>/f setwarp &lt;название&gt; - установить временную клановую точку для телепортации (Офицер, Лидер)</li>
-<li>/f unsetwarp - удалить клановую точку (Офицер, Лидер)</li>
-<li>/f warp - телепортироваться на клановую точку</li>
-<li>/f mute &lt;ник&gt; - выдать мут на все чаты Factions члену вашей фракции (Офицер, Лидер)</li>
-<li>/f unmute &lt;ник&gt; - убирает мут со всех чатов Factions члену вашей фракции (Офицер, Лидер)</li>
-<li>/f territorytitles, tt (onoff) - включить/выключить отображение названия фракции в чате при входе на ее территорию</li>
-<li>/f ask &lt;текст&gt; - отправить запрос лидерам кланов о поиске фракции</li>
-</ul>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: center;">Команда</th>
+<th style="text-align: center;">Роль</th>
+<th style="text-align: center;">Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">/f tnt (on/off)</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Включить или отключить установку динамита на территории вашей фракции для членов фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f coords, cc</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Отправить запрос о помощи в чат фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f dchat</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Включить или отключить просмотр чатов фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f setwarp &lt;название&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Установить временную клановую точку для телепортации</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f unsetwarp</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Удалить клановую точку</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f warp</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Телепортироваться на клановую точку</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f mute &lt;ник&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Выдать мут на все чаты Factions члену вашей фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f unmute &lt;ник&gt;</td>
+<td style="text-align: center;">Офицер, Лидер</td>
+<td style="text-align: center;">Убирает мут со всех чатов Factions члену вашей фракции</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f territorytitles, tt (on/off)</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Включить или выключить отображение названия фракции в чате при входе на ее территорию</td>
+</tr>
+<tr>
+<td style="text-align: center;">/f ask &lt;текст&gt;</td>
+<td style="text-align: center;">Все игроки</td>
+<td style="text-align: center;">Отправить запрос лидерам кланов о поиске фракции</td>
+</tr>
+</tbody>
+</table>
+</div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
