@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735902659586">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.735903056124">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -32,11 +32,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../../resources/css/retype.css?v=2.4.0.735902659586" rel="stylesheet" />
+    <link href="../../../../resources/css/retype.css?v=2.4.0.735903056124" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../../resources/js/config.js?v=2.4.0.735902659586" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../../resources/js/config.js?v=2.4.0.735903056124" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../../resources/js/lunr.js?v=2.4.0.735902659586" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../../resources/js/lunr.js?v=2.4.0.735903056124" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -257,8 +257,12 @@
 <li>Переименование;</li>
 <li>Ремонт всех предметов в инвентаре.</li>
 </ul>
-<p>Сумма починки вычисляется в зависимости от количества потерянной прочности предмета.</p>
-<p><img src="https://imgur.com/y2u4FzC.png" alt="Caption" /> <img src="https://imgur.com/16gTZ9H.png" alt="Caption" />--</p>
+<p>Все инструменты, броня и оружие, которые находятся в вашем инвентаре, автоматически показываются в интерфейсе починки предметов. Сумма починки вычисляется в зависимости от количества потерянной прочности предмета.</p>
+<p><figure class="content-center">
+    <img src="https://imgur.com/y2u4FzC.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>Переименование имеет фиксированную цену для всех вещей и поддерживает цветовые коды.
 При убийстве игрока переименованным предметом его название, убийца и жертва отобразятся в сообщении всем игрокам в радиусе 100 блоков.</p>
 <p><figure class="content-center">
@@ -266,7 +270,16 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Все инструменты, броня и оружие, которые находятся в вашем инвентаре, автоматически показываются в интерфейсе починки предметов.</p>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span><strong>Зачарование предметов</strong></span>
+</span></p>
+<p>Стол зачарований расположен также на точке спавна <code v-pre>/spawn</code> и представляет из себя интерфейс со всеми необходимыми зачарованиями, отсортированными по редкости. При выборе зачарования и его уровня произойдет наложение чаров на все предметы, которые помещены в ячейки стола.</p>
+<p>Вы можете зачаровывать одновременно вплоть до 4-х предметов: броня, оружие и инструменты, однако стоит учесть, что в данном случае вам будут отображаться только общие зачарования для помещенного снаряжения.</p>
+<p><figure class="content-center">
+    <img src="https://imgur.com/ml7q3k1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -279,8 +292,8 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Важно</h5>
-<p>Вы не можете создавать и чинить предметы в своей наковальне.</p>
+            <h5>Примечание</h5>
+<p>Вы не можете создавать и использовать собственную наковальню и стол зачарований</p>
         </div>
     </div>
 </div>
