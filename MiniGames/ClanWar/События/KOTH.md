@@ -26,7 +26,7 @@ icon: ":bow_and_arrow:"
 --------------
 [!badge size="l" variant="secondary" icon="cloud" text="**Средиземье**"]
 
-Точка #3. Имеет редкость 2 звезды. Расположена в обычном мире на территории WarZone.
+Точка #3. Имеет редкость 1 звезду. Расположена в обычном мире на территории WarZone.
 
 ![](https://imgur.com/IEcXpTG.png)
 
