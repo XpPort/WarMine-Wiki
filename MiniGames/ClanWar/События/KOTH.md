@@ -36,4 +36,4 @@ icon: ":bow_and_arrow:"
 При выходе из региона события статистика не обнуляется, а очки за захват начисляются конкретно фракции, независимо от числа участников клана на точке. Одновременно получать очки может неограниченное число кланов, необходимо лишь находиться в регионе захвата.
 !!! 
 
-[!button variant="light" icon="tab" iconAlign="right" text="Сокровищница"](https://wiki.warmine.ru/minigames/clanwar/события/бой-насмерть/) 
+[!button variant="light" icon="tab" iconAlign="right" text="Боссы"](https://wiki.warmine.ru/minigames/clanwar/события/боссы/) 
