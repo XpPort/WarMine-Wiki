@@ -1,2 +1,2 @@
-order: 1000
+order: 900
 icon: ":star2::"
