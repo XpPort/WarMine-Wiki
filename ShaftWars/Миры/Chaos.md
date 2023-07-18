@@ -1,2 +1,2 @@
 order: 800
-icon: ":fire::"
+icon: ":fire:"
