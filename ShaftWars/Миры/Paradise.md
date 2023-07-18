@@ -1,4 +1,4 @@
 ---
 label: Основная информация о Paradise мире.
-icon: ":star2:"
+icon: ":star:"
 ---
