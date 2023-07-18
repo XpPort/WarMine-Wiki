@@ -1,2 +1,4 @@
-order: 900
+---
+label: Основная информация о Paradise мире.
 icon: ":star2:"
+---
