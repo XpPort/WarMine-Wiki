@@ -1,4 +1,0 @@
----
-label: Hard
-icon: ":cyclone:"
----
