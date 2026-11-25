@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: https://wiki.warmine.ru/
+url: https://wiki.warmine.net/
 branding:
   title: WARMINE WIKI
   label: Docs
@@ -10,13 +10,13 @@ links:
     icon: home
 
   - text: Главная
-    link: https://warmine.ru
+    link: https://warmine.net
     icon: comment-discussion
 
   - text: Форум
-    link: https://forum.warmine.ru
+    link: https://forum.warmine.net
     icon: note
     
   - text: Донат
-    link: https://warmine.ru//go/shop/s.1
+    link: https://warmine.net/shop
     icon: star
