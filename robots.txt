@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wiki.warmine.ru/sitemap.xml
+Sitemap: https://wiki.warmine.net/sitemap.xml
